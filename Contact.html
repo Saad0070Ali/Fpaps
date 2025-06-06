@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FPAPS 2025 Symposium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f9ff;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #004080;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    nav ul li a.active {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #0073e6, #004080);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.8em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Content Sections */
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+@media (max-width: 768px) {
+  /* Stack nav items vertically */
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Adjust header flex layout */
+  header div[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Logo alignment */
+  header div[style*="text-align: left"],
+  header div[style*="text-align: right"] {
+    text-align: center !important;
+    margin: 10px 0;
+  }
+
+  /* Font sizing */
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  /* Section padding */
+  section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  /* Sponsor logos resize */
+  #Sponsor img {
+    height: 80px;
+  }
+
+  /* Fix overflowing iframe */
+  #location iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="Home.html" class="nav-link">Home</a></li>
+      <li><a href="2024-highlight.html" class="nav-link">2024 Event Highlights</a></li>
+      <li><a href="Registration.html" class="nav-link ">Register</a></li>
+      <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </nav>
+
+ <header id="home" style="position: relative; color: white; padding: 60px 20px; background-color: #004080;">
+  <!-- Background Image -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('Website Resources/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+  "></div>
+
+  <!-- Foreground Content -->
+  <div style="position: relative; z-index: 1; max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; text-align: center;">
+
+    <!-- Left Logo -->
+    <div style="flex: 1; text-align: left;">
+      <a href="https://www.unifiji.ac.fj" target="_blank">
+        <img src="Website Resources/Unifiji logo.png" alt="UniFiji Logo" style="height: 80px; max-width: 100%;" />
+<img src="Website Resources/QAA-logo.png" alt="Qaa Logo" style="height: 40px; max-width: 100%;" />
+
+      </a>
+    </div>
+
+    <!-- Centered Text -->
+    <div style="flex: 2; min-width: 300px;">
+      <h1 style="margin: 0; font-size: 2.4rem;">Fiji Physical Activity Symposium </h1>
+      <p style="margin-top: 10px; font-size: 1.1rem;">
+        Join us at the University of Fiji to Promote Collaborative Practice in Physical Activity!
+      </p>
+    </div>
+
+    <!-- Right Logo -->
+    <div style="flex: 1; text-align: right;">
+      <a href="https://icsesp.global" target="_blank">
+        <img src="Website Resources/ICSESP.png" alt="ICSESP Logo" style="height: 80px; max-width: 100%;" />
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+   <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>
+      For more information, contact the Organising Committee at:<br />
+      <strong>Email:</strong> <a href="mailto:fpaps@unifiji.ac.fj">fpaps@unifiji.ac.fj</a>
+    </p>
+  </section>
+
+ 
+  <section id="location">
+    <h3>📍 Location</h3>
+    <div style="max-width: 400px; margin-top: 10px;">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe 
+          src="https://maps.google.com/maps?q=university+of+fiji&output=embed" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; Fiji Physical Activity Promotion Symposium – University of Fiji
+  </footer>
+
+  <!-- Bottom Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="Home.html" class="nav-link">Home</a></li>
+      <li><a href="2024-highlight.html" class="nav-link">2024 Event Highlights</a></li>
+      <li><a href="Registration.html" class="nav-link ">Register</a></li>
+      <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FPAPS 2025 Symposium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f9ff;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #004080;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    nav ul li a.active {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #0073e6, #004080);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.8em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Content Sections */
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+@media (max-width: 768px) {
+  /* Stack nav items vertically */
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Adjust header flex layout */
+  header div[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Logo alignment */
+  header div[style*="text-align: left"],
+  header div[style*="text-align: right"] {
+    text-align: center !important;
+    margin: 10px 0;
+  }
+
+  /* Font sizing */
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  /* Section padding */
+  section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  /* Sponsor logos resize */
+  #Sponsor img {
+    height: 80px;
+  }
+
+  /* Fix overflowing iframe */
+  #location iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="Home.html" class="nav-link">Home</a></li>
+      <li><a href="2024-highlight.html" class="nav-link active">2024 Event Highlights</a></li>
+      <li><a href="Registration.html" class="nav-link">Register</a></li>
+      <li><a href="Contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+ <header id="home" style="position: relative; color: white; padding: 60px 20px; background-color: #004080;">
+  <!-- Background Image -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('Website Resources/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+  "></div>
+
+  <!-- Foreground Content -->
+  <div style="position: relative; z-index: 1; max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; text-align: center;">
+
+    <!-- Left Logo -->
+    <div style="flex: 1; text-align: left;">
+      <a href="https://www.unifiji.ac.fj" target="_blank">
+        <img src="Website Resources/Unifiji logo.png" alt="UniFiji Logo" style="height: 80px; max-width: 100%;" />
+<img src="Website Resources/QAA-logo.png" alt="Qaa Logo" style="height: 40px; max-width: 100%;" />
+
+      </a>
+    </div>
+
+    <!-- Centered Text -->
+    <div style="flex: 2; min-width: 300px;">
+      <h1 style="margin: 0; font-size: 2.4rem;">Fiji Physical Activity Symposium </h1>
+      <p style="margin-top: 10px; font-size: 1.1rem;">
+        Join us at the University of Fiji to Promote Collaborative Practice in Physical Activity!
+      </p>
+    </div>
+
+    <!-- Right Logo -->
+    <div style="flex: 1; text-align: right;">
+      <a href="https://icsesp.global" target="_blank">
+        <img src="Website Resources/ICSESP.png" alt="ICSESP Logo" style="height: 80px; max-width: 100%;" />
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<section>
+  <h2 style="text-align: center;">Event Highlights</h2>
+  <div class="carousel-container" style="position: relative; max-width: 700px; margin: auto; overflow: hidden;">
+    <div class="carousel-slides" id="carouselSlides" style="display: flex; transition: transform 0.5s ease;">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item" style="min-width: 100%; text-align: center;">
+        <img src="Website Resources/Pictures/demo.jpg" alt="Demo" style="height: 280px; max-width: 100%;">
+        <h3>Exciting Demonstrations of Basic Taekwondo Techniques.</h3>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="min-width: 100%; text-align: center;">
+        <img src="Website Resources/Pictures/Keynote.jpg" alt="Keynote" style="height: 280px; max-width: 100%;">
+        <h3>Insightful views shared by our Year 5's of 2024 who brought in their clinical experiences through their <strong>keynote presentations</strong>.</h3>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="min-width: 100%; text-align: center;">
+        <img src="Website Resources/Pictures/salsabeel.jpg" alt="Salsabeel" style="height: 280px; max-width: 100%;">
+        <h3>Insightful presentation by Salsabeel, a committed member sharing her perspective on physical activity which she gained through Taekwondo.</h3>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item" style="min-width: 100%; text-align: center;">
+        <img src="Website Resources/Pictures/tago.jpg" alt="Tago" style="height: 280px; max-width: 100%;">
+        <h3>Tago contributing his take on Physical Activity through Public Health.</h3>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item" style="min-width: 100%; text-align: center;">
+        <img src="Website Resources/Pictures/panel.jpg" alt="Panel" style="height: 280px; max-width: 100%;">
+        <h3>Engaging dialogue among thought leaders during the panel discussion.</h3>
+      </div>
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #004080; color: white; border: none; padding: 10px; cursor: pointer;">&#10094;</button>
+    <button onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #004080; color: white; border: none; padding: 10px; cursor: pointer;">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementById("carouselSlides");
+  const totalSlides = slides.children.length;
+
+  function showSlides() {
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  function plusSlides(n) {
+    slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+    showSlides();
+  }
+
+  showSlides();
+</script>
+
+<section>
+  <h2 style="text-align: center;">FPAPS 2024: Event Highlights & Impact</h2>
+  <p style="font-size: 1.1rem; line-height: 1.6;">
+    The 2024 Fiji Physical Activity Promotion Symposium (FPAPS), held at the University of Fiji, brought together 170 delegates for an inspiring day of knowledge sharing and collaboration. The event featured 2 keynote addresses, 5 student presentations, 2 invited talks, and an engaging panel discussion. With the support of sponsors, the symposium spotlighted innovative perspectives on physical activity, including powerful student-led insights and dynamic Taekwondo demonstrations.
+  </p>
+  <p style="font-size: 1.1rem; line-height: 1.6;">
+    A remarkable 94% of attendees reported being extremely satisfied or satisfied, with 100% stating the event was well-organized and worth attending again. Attendees especially appreciated the demonstrations, audience interaction, and quality of student contributions. Based on this overwhelming success, the organizing committee looks forward to an even more inclusive and engaging FPAPS 2025!
+  </p>
+</section>
+
+
+
+
+  <footer>
+    &copy; Fiji Physical Activity Promotion Symposium – University of Fiji
+  </footer>
+
+  <!-- Bottom Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="Home.html" class="nav-link">Home</a></li>
+      <li><a href="2024-highlight.html" class="nav-link active">2024 Event Highlights</a></li>
+      <li><a href="Registration.html" class="nav-link">Register</a></li>
+      <li><a href="Contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+
+</body>
+</html>
